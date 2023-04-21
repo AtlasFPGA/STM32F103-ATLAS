@@ -2,7 +2,8 @@
    Adaptación del microcontrolador STM32F103 conocido como BLUEPILL a la I/O BOARD ATLAS
 
    Es uno de los microcontroladores de la gama STM32 más usado, y optamos por adaptarlo a I/O BOARD ATLAS:
-   La base del diseño esta creada en la siguiente demo VGA PARA STM32F103:
+   
+#   La base del diseño esta creada en la siguiente demo VGA PARA STM32F103:
 
 https://github.com/abelykh0/VGA-demo-on-bluepill
 
@@ -21,15 +22,15 @@ How to connect wires:
 
 | PIN | Description |  Output |
 | --- | ----------- | ------ |
-| PA0 | Red 1 | VGA red (1)
-| PA1 | Red 2 |  VGA red (1)
-| PA2 | Green 1 |  VGA green (2)
-| PA3 | Green 2 |  VGA green (2)
-| PA4 | Blue 1 |  VGA blue (3)
-| PA5 | Blue 2 |  VGA blue (3)
-| PB0 | HSync |  VGA HSync (13)
-| PB6 | VSync |  VGA VSync (14)
-| G | Ground |  VGA Ground (5,6,7,8,10)
+| PA0 | Red 1 | VGA red 
+| PA1 | Red 2 |  VGA red 
+| PA2 | Green 1 |  VGA green 
+| PA3 | Green 2 |  VGA green 
+| PA4 | Blue 1 |  VGA blue 
+| PA5 | Blue 2 |  VGA blue 
+| PB0 | HSync |  VGA HSync 
+| PB6 | VSync |  VGA VSync 
+| G | Ground |  VGA Ground 
 
 
 Diseño del recolocador STM32F103 en I/O BOARD ATLAS.
