@@ -3,7 +3,7 @@
 
    Es uno de los microcontroladores de la gama STM32 más usado, y optamos por adaptarlo a I/O BOARD ATLAS:
    
-#   La base del diseño esta creada en la siguiente demo VGA PARA STM32F103:
+###   La base del diseño esta creada en la siguiente demo VGA PARA STM32F103:
 
 https://github.com/abelykh0/VGA-demo-on-bluepill
 
