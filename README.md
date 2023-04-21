@@ -36,42 +36,29 @@ Diseño propuesto más 6 pines en el bus 2x20, y 2 pines extra para tener un dis
 
 señales ATLAS | Patillaje izquierda | patilaje derecha | señales ATLAS
 | ---: | ---: | ---: | :---: 
-  | PB12  | GND | GND
-  | PB13 | GND| GND
-  | PB14 | +3V3 | +3V3
-| PB15 | RESET_B | RESET_STM32
-| PA8 | PB11 | JOY_DOWN
-| PA9 | PB10 | JOY_RIGHT
-| PA10 | PB1 | JOY_LEFT
-| PA11 | PB0 | HSYNC
-| PA12 | PA7 | 
-| PA15 | PA6  | 
-| PB3 | PA5 | BLUE[1]
-| PB4 | PA4 | BLUE[0]
-| PB5 | PA3 | GREEN[1]
+PI_CS  | PB12  | GND | GND
+PI_CLK  | PB13 | GND| GND
+PI_MISO  | PB14 | +3V3 | +3V3
+PI_MOSI| PB15 | RESET_B | RESET_STM32
+KB_CLK | PA8 | PB11 | JOY_DOWN
+KB_DATA | PA9 | PB10 | JOY_RIGHT
+MOUSE_CLK | PA10 | PB1 | JOY_LEFT
+MOUSE_DATA | PA11 | PB0 | HSYNC
+EAR | PA12 | PA7 | AUDIO_R
+SD_CS | PA15 | PA6  | AUDIO_L
+SD_CLK | PB3 | PA5 | BLUE[1]
+SD_MISO | PB4 | PA4 | BLUE[0]
+SD_MOSI | PB5 | PA3 | GREEN[1]
 VSYNC | PB6 | PA2 | GREEN[0]
 JOY_P1| PB7 | PA1 | RED[1]
 JOY_UP| PB8 | PA0| RED[0]
-JOY_P2| PB9 | PC15 | 
-GND| +5V | PC14 | 
-VIN| GND | PC13 | 
-VIN| +3V3 | VBAT|
+JOY_P2| PB9 | PC15 | OSC32 OUT
+GND| +5V | PC14 | OS32 IN
+VIN| GND | PC13 | TAMPER RTC
+VIN| +3V3 | VBAT| VBAT
 
-KB_CLK
-KB_DATA
+Segunda asignación STM32F103 en la I/O BOARD ATLAS.
 
-MOUSE_CLK
-MOUSE_DATA
-
-AUDIO_R
-AUDIO_L
-
-EAR 
-
-SD_CS
-SD_MOSI
-SD_MISO
-SD_CLK
 ...
 
 
