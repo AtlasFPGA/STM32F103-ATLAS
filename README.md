@@ -15,6 +15,27 @@ alt="VGA Demo on Bluepill" width="480" height="360" border="10" /></a>
 
 Uso del grabador STLINK, es necesario:
 
+Señales disponibles en I/O BOARD ATLAS a disposición del STM32F103:
+
+---
+
+señales ATLAS| aclaración en STM32F103 | numero pines
+| :--- | ---: | :---:
+Señal VGA64 |Usamos en el STM32F103 un esquema de 64colores 222+HS+VS | 8
+Señal JOYSTICK DB9 | En preparación ATARI-PADDLE-ATLAS  | 6
+Señal SD SPI | las señales QPI se usan en modo SPI| 4
+Señal PS2 TECLADO  | Protocolo PS/2 | 2
+Señal PS2 RATÓN | Protocolo PS/2 | 2
+Señal Sonido Estereo | sonido delta sigma_(12bits) o un pwm_(10bits)| 2
+Señal Transmisión y Recepcion | RX TX sin gestión de flujo| 2
+Señal EAR | Señal de entrada | 1
+
+Pines disponibles en el Diseño con conectores en la I/O BOARD ATLAS 25 + 2 + 6:
+
+Diseño propuesto más 6 pines en el bus 2x20, y 2 pines extra para tener un diseño QSPI.
+
+...
+
 
 How to connect wires:
 
